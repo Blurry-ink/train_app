@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+}
+
+.calendar {
+  margin-bottom: 20px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+}
+
+.progress-bar {
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 20px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.progress {
+  background-color: green;
+  height: 100%;
+  width: 0%;
+}

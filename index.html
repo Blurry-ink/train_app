@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Training Tracker</h1>
+
+        <!-- Поле для ввода имени пользователя -->
+        <div id="username-container" style="display: none;"> <!-- Добавляем проверку display, т.к. по умолчанию скрыто -->
+            <label for="username">Введите ваше имя пользователя:</label>
+            <input type="text" id="username" placeholder="Введите имя">
+            <button id="save-username-btn">Сохранить</button>
+        </div>
+
+        <!-- Основной контент, который изначально скрыт -->
+        <div id="content" style="display: none;">
+            <div class="calendar">
+                <div id="calendar"></div>
+            </div>
+
+            <div class="input-fields">
+                <p>Сегодняшняя дата: <span id="current-date"></span></p>
+                <label for="press">Жим:</label>
+                <input type="number" id="press" placeholder="Введите количество">
+                <label for="squat">Присед:</label>
+                <input type="number" id="squat" placeholder="Введите количество">
+                <label for="pushup">Пресс:</label>
+                <input type="number" id="pushup" placeholder="Введите количество">
+                <button id="submit-btn">Обновить</button>
+            </div>
+
+            <div class="progress-section">
+                <p>Текущий уровень: <span id="current-level"></span></p>
+                <p>Текущий опыт: <span id="current-experience"></span></p>
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
